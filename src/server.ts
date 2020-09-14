@@ -2,8 +2,10 @@ import * as express from 'express';
 
 import { notFoundError, errorHandler } from './middlewares/errors.middleware';
 import { router as groceriesRoutes } from './controllers/groceries.routes'
+import bodyParser = require('body-parser');
 
 const app = express();
+app.use(bodyParser.json());
 
 app.get('/', (req, res,) => {
     res.json({ hello: 'world' });
