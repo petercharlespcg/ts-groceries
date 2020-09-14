@@ -1,0 +1,11 @@
+{
+    "type": "postgres",
+    "host": "192.168.99.100",
+    "port": 5442,
+    "username": "turreta",
+    "password": "a1128f69-e6f7-4e93-a2df-3d4db6030abc",
+    "database": "groceries",
+    "synchronize": true,
+    "logging": true,
+    "entities": ["src/entities/**/*.ts", "dist/entities/**/*.js"]
+}
