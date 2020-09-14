@@ -1,6 +1,6 @@
 import * as express from 'express';
 
-const app: Express.Application = express();
+const app = express();
 
 app.get('/', (req, res,) => {
     res.json({ hello: 'world' });
